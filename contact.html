@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact — Bright Byte</title>
+  <meta name="description" content="Tell us what you're building. A senior engineer replies within two business days with honest first thoughts.">
+  <meta name="theme-color" content="#070b16">
+  <meta property="og:title" content="Contact — Bright Byte">
+  <meta property="og:description" content="Tell us what you're building. A senior engineer replies within two business days with honest first thoughts.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Bright Byte home">
+        <svg width="30" height="30" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="1" y="9" width="6" height="6" rx="2" fill="#4a5578"/><rect x="9" y="9" width="6" height="6" rx="2" fill="#4a5578"/><rect x="17" y="9" width="6" height="6" rx="2" fill="#4a5578"/><rect x="25" y="9" width="6" height="6" rx="2" fill="#ffb627"/><rect x="1" y="17" width="6" height="6" rx="2" fill="#4a5578"/><rect x="9" y="17" width="6" height="6" rx="2" fill="#98a2bd"/><rect x="17" y="17" width="6" height="6" rx="2" fill="#4a5578"/><rect x="25" y="17" width="6" height="6" rx="2" fill="#4a5578"/></svg>
+        Bright&nbsp;<span class="byte">Byte</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="process.html">Process</a>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="contact.html" class="btn btn-sm nav-cta">Start a project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow reveal">Contact</p>
+        <h1 class="reveal" style="--d:.05s">Let's build something bright.</h1>
+        <p class="lede reveal" style="--d:.1s">Tell us about your product in a few sentences. A senior engineer — not a salesperson — reads every message and replies within two business days.</p>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="wrap">
+        <div class="grid" style="grid-template-columns:1.5fr 1fr;gap:48px;align-items:start">
+          <form id="contactForm" class="reveal" data-to="brightbyte.myb@gmail.com" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="cName">Name <span class="req">*</span></label>
+                <input id="cName" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="cEmail">Work email <span class="req">*</span></label>
+                <input id="cEmail" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="cCompany">Company</label>
+                <input id="cCompany" name="company" type="text" autocomplete="organization">
+              </div>
+              <div class="field">
+                <label for="cType">What do you need?</label>
+                <select id="cType" name="type">
+                  <option>New product build</option>
+                  <option>Existing product — new features</option>
+                  <option>Rescue / modernise a system</option>
+                  <option>Cloud &amp; DevOps help</option>
+                  <option>Data &amp; AI feature</option>
+                  <option>Team extension</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="cBudget">Budget range</label>
+                <select id="cBudget" name="budget">
+                  <option>Still figuring it out</option>
+                  <option>Under $25k</option>
+                  <option>$25k – $75k</option>
+                  <option>$75k – $200k</option>
+                  <option>$200k+</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="cMessage">Project details <span class="req">*</span></label>
+                <textarea id="cMessage" name="message" required placeholder="What are you building, who is it for, and where are you today — idea, prototype, or live product?"></textarea>
+              </div>
+              <div class="full">
+                <button class="btn" type="submit">Send message <span class="arrow" aria-hidden="true">→</span></button>
+                <p class="form-note" id="formStatus" style="margin-top:14px">Submitting opens a pre-filled email in your mail app — nothing is stored on this site.</p>
+              </div>
+            </div>
+          </form>
+
+          <aside>
+            <div class="card reveal" style="--d:.06s;margin-bottom:18px">
+              <h3>Prefer email?</h3>
+              <p>Write to us directly — same inbox, same people.</p>
+              <p><a href="mailto:brightbyte.myb@gmail.com">brightbyte.myb@gmail.com</a></p>
+            </div>
+            <div class="card reveal" style="--d:.12s">
+              <h3>What happens next</h3>
+              <ol style="margin:0;padding-left:1.2em;color:var(--muted);font-size:.96rem;line-height:1.9">
+                <li>A senior engineer replies within two business days.</li>
+                <li>A 30-minute call to understand the problem — free, no deck.</li>
+                <li>A written recommendation: the smallest engagement that moves you forward.</li>
+              </ol>
+              <p style="margin-top:14px;font-size:.9rem;color:var(--faint)">Working under wraps? Happy to sign an NDA before the call.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <svg width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="1" y="9" width="6" height="6" rx="2" fill="#4a5578"/><rect x="9" y="9" width="6" height="6" rx="2" fill="#4a5578"/><rect x="17" y="9" width="6" height="6" rx="2" fill="#4a5578"/><rect x="25" y="9" width="6" height="6" rx="2" fill="#ffb627"/><rect x="1" y="17" width="6" height="6" rx="2" fill="#4a5578"/><rect x="9" y="17" width="6" height="6" rx="2" fill="#98a2bd"/><rect x="17" y="17" width="6" height="6" rx="2" fill="#4a5578"/><rect x="25" y="17" width="6" height="6" rx="2" fill="#4a5578"/></svg>
+            Bright&nbsp;<span class="byte">Byte</span>
+          </a>
+          <p class="footer-tagline">A software development studio that takes products from first question to stable orbit.</p>
+        </div>
+        <div>
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Join us</h4>
+          <ul>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <!-- TODO: replace with your company address once set up -->
+            <li><a href="mailto:brightbyte.myb@gmail.com">brightbyte.myb@gmail.com</a></li>
+            <li><span class="muted" style="font-size:.94rem">Remote-first · Worldwide</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Bright Byte. All rights reserved.</span>
+        <span>Made with care — and shipped on a Friday.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
