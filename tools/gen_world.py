@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the Bright Byte isometric scroll-world SVG."""
+"""Generate the Bytes 360 isometric scroll-world SVG."""
 import math
 
 C, S = 0.8660254, 0.5  # iso projection constants
@@ -319,7 +319,7 @@ style = """<style>
 
 svg = (f'<svg id="worldSvg" viewBox="0 0 3200 2400" width="3200" height="2400" '
        f'xmlns="http://www.w3.org/2000/svg" role="img" '
-       f'aria-label="Isometric illustration of the Bright Byte delivery journey: four floating islands for discovery, design, engineering, and launch, connected by a glowing flight path.">'
+       f'aria-label="Isometric illustration of the Bytes 360 delivery journey: four floating islands for discovery, design, engineering, and launch, connected by a glowing flight path.">'
        + style + "".join(OUT) + "</svg>")
 
 with open("world.svg", "w") as f:

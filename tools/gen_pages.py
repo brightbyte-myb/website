@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Generate Bright Byte interior pages with shared header/footer chrome."""
+"""Generate Bytes 360 interior pages with shared header/footer chrome."""
 import os
 
-ROOT = "/Users/yb/Desktop/Bright Byte"
+ROOT = "/Users/yb/Desktop/Bytes 360"
 EMAIL = "brightbyte.myb@gmail.com"  # TODO: swap for company address
 
 MARK = '''<svg width="{s}" height="{s}" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="1" y="9" width="6" height="6" rx="2" fill="#4a5578"/><rect x="9" y="9" width="6" height="6" rx="2" fill="#4a5578"/><rect x="17" y="9" width="6" height="6" rx="2" fill="#4a5578"/><rect x="25" y="9" width="6" height="6" rx="2" fill="#ffb627"/><rect x="1" y="17" width="6" height="6" rx="2" fill="#4a5578"/><rect x="9" y="17" width="6" height="6" rx="2" fill="#98a2bd"/><rect x="17" y="17" width="6" height="6" rx="2" fill="#4a5578"/><rect x="25" y="17" width="6" height="6" rx="2" fill="#4a5578"/></svg>'''
@@ -22,9 +22,9 @@ def header(current):
 
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html" aria-label="Bright Byte home">
+      <a class="brand" href="index.html" aria-label="Bytes 360 home">
         {MARK.format(s=30)}
-        Bright&nbsp;<span class="byte">Byte</span>
+        Bytes&nbsp;<span class="byte">360</span>
       </a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
         <span></span><span></span><span></span>
@@ -42,7 +42,7 @@ FOOTER = f'''  <footer class="site-footer">
         <div>
           <a class="brand" href="index.html">
             {MARK.format(s=26)}
-            Bright&nbsp;<span class="byte">Byte</span>
+            Bytes&nbsp;<span class="byte">360</span>
           </a>
           <p class="footer-tagline">A software development studio that takes products from first question to stable orbit.</p>
         </div>
@@ -71,7 +71,7 @@ FOOTER = f'''  <footer class="site-footer">
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span data-year>2026</span> Bright Byte. All rights reserved.</span>
+        <span>© <span data-year>2026</span> Bytes 360. All rights reserved.</span>
         <span>Made with care — and shipped on a Friday.</span>
       </div>
     </div>
@@ -322,7 +322,7 @@ process_main = hero(
 about_main = hero(
     "About",
     "The studio behind the bytes.",
-    "Bright Byte exists because too much software gets built twice: once wrong, then again properly. We were founded by engineers to do the second version first."
+    "Bytes 360 exists because too much software gets built twice: once wrong, then again properly. We were founded by engineers to do the second version first."
 ) + f'''
 
     <section class="section-tight">
@@ -331,7 +331,7 @@ about_main = hero(
           <div class="reveal">
             <h2>Why we exist</h2>
             <p>Every engineer here has lived the other side of this industry: the agency that staffed juniors after selling seniors, the project that went dark for two months and returned unrecognisable, the codebase held hostage by its own builders.</p>
-            <p>Bright Byte is the studio we wished we could have hired. Small senior teams. Working software every week. Code, infrastructure, and documentation that live in the client's accounts from the first commit — so trust is structural, not contractual.</p>
+            <p>Bytes 360 is the studio we wished we could have hired. Small senior teams. Working software every week. Code, infrastructure, and documentation that live in the client's accounts from the first commit — so trust is structural, not contractual.</p>
           </div>
           <div class="reveal" style="--d:.08s">
             <h2>How we're built</h2>
@@ -421,7 +421,7 @@ careers_main = hero(
     <section class="section-tight">
       <div class="wrap">
         <div class="section-head reveal">
-          <p class="eyebrow">Life at Bright Byte</p>
+          <p class="eyebrow">Life at Bytes 360</p>
           <h2>How we treat the people who build.</h2>
         </div>
         <div class="grid grid-4">
@@ -594,12 +594,12 @@ notfound_main = '''    <section class="page-hero" style="min-height:62vh;display
 '''
 
 PAGES = [
-    ("services.html", "Services — Bright Byte", "Custom software, web and mobile apps, cloud & DevOps, data & AI, QA & support — delivered by senior engineers with weekly demos.", services_main),
-    ("process.html", "Process — Bright Byte", "How Bright Byte takes software from discovery to launch: fixed-price discovery, weekly build cycles, monitored launches, and honest collaboration.", process_main),
-    ("about.html", "About — Bright Byte", "Bright Byte is a senior software development studio built on clarity, craft, ownership, and momentum — small pods, no lock-in, no silence.", about_main),
-    ("careers.html", "Careers — Bright Byte", "Join a remote-first senior software studio: deep-work culture, sustainable pace, transparent pay, and a hiring process without hazing.", careers_main),
-    ("contact.html", "Contact — Bright Byte", "Tell us what you're building. A senior engineer replies within two business days with honest first thoughts.", contact_main),
-    ("404.html", "Page not found — Bright Byte", "This page drifted out of orbit. Head back to Bright Byte mission control.", notfound_main),
+    ("services.html", "Services — Bytes 360", "Custom software, web and mobile apps, cloud & DevOps, data & AI, QA & support — delivered by senior engineers with weekly demos.", services_main),
+    ("process.html", "Process — Bytes 360", "How Bytes 360 takes software from discovery to launch: fixed-price discovery, weekly build cycles, monitored launches, and honest collaboration.", process_main),
+    ("about.html", "About — Bytes 360", "Bytes 360 is a senior software development studio built on clarity, craft, ownership, and momentum — small pods, no lock-in, no silence.", about_main),
+    ("careers.html", "Careers — Bytes 360", "Join a remote-first senior software studio: deep-work culture, sustainable pace, transparent pay, and a hiring process without hazing.", careers_main),
+    ("contact.html", "Contact — Bytes 360", "Tell us what you're building. A senior engineer replies within two business days with honest first thoughts.", contact_main),
+    ("404.html", "Page not found — Bytes 360", "This page drifted out of orbit. Head back to Bytes 360 mission control.", notfound_main),
 ]
 
 for fname, title, desc, main in PAGES:

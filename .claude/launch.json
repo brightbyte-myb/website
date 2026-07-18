@@ -4,7 +4,7 @@
     {
       "name": "brightbyte",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8123", "--directory", "/Users/yb/Desktop/Bright Byte"],
+      "runtimeArgs": ["-m", "http.server", "8123", "--directory", "/Users/yb/Desktop/Bytes 360"],
       "port": 8123
     }
   ]
