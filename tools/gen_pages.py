@@ -5,7 +5,7 @@ import os
 ROOT = "/Users/yb/Desktop/Bytes 360"
 EMAIL = "brightbyte.myb@gmail.com"  # TODO: swap for company address
 
-MARK = '''<svg width="{s}" height="{s}" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="1" y="9" width="6" height="6" rx="2" fill="#4a5578"/><rect x="9" y="9" width="6" height="6" rx="2" fill="#4a5578"/><rect x="17" y="9" width="6" height="6" rx="2" fill="#4a5578"/><rect x="25" y="9" width="6" height="6" rx="2" fill="#ffb627"/><rect x="1" y="17" width="6" height="6" rx="2" fill="#4a5578"/><rect x="9" y="17" width="6" height="6" rx="2" fill="#98a2bd"/><rect x="17" y="17" width="6" height="6" rx="2" fill="#4a5578"/><rect x="25" y="17" width="6" height="6" rx="2" fill="#4a5578"/></svg>'''
+MARK = '''<img class="brand-mark" src="assets/logo-mark.png" alt="" width="{s}" height="{s}" decoding="async">'''
 
 NAV_ITEMS = [
     ("index.html", "Home"), ("services.html", "Services"), ("process.html", "Process"),
@@ -23,7 +23,7 @@ def header(current):
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="index.html" aria-label="Bytes 360 home">
-        {MARK.format(s=30)}
+        {MARK.format(s=38)}
         Bytes&nbsp;<span class="byte">360</span>
       </a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
@@ -41,7 +41,7 @@ FOOTER = f'''  <footer class="site-footer">
       <div class="footer-grid">
         <div>
           <a class="brand" href="index.html">
-            {MARK.format(s=26)}
+            {MARK.format(s=32)}
             Bytes&nbsp;<span class="byte">360</span>
           </a>
           <p class="footer-tagline">A software development studio that takes products from first question to stable orbit.</p>
@@ -89,7 +89,9 @@ def page(filename, title, description, current, main):
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{description}">
   <meta property="og:type" content="website">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:image" content="assets/logo-lockup.png">
   <link rel="stylesheet" href="css/style.css">
   <script>document.documentElement.classList.add("js");</script>
 </head>
