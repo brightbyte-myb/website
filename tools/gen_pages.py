@@ -3,7 +3,7 @@
 import os
 
 ROOT = "/Users/yb/Desktop/Bytes 360"
-EMAIL = "brightbyte.myb@gmail.com"  # TODO: swap for company address
+EMAIL = "bytes360@proton.me"
 
 MARK = '''<img class="brand-mark" src="assets/logo-mark.png" alt="" width="{s}" height="{s}" decoding="async">'''
 
@@ -64,7 +64,6 @@ FOOTER = f'''  <footer class="site-footer">
         <div>
           <h4>Get in touch</h4>
           <ul>
-            <!-- TODO: replace with your company address once set up -->
             <li><a href="mailto:{EMAIL}">{EMAIL}</a></li>
             <li><span class="muted" style="font-size:.94rem">Remote-first · Worldwide</span></li>
           </ul>
